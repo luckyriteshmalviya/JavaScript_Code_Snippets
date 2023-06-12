@@ -9,3 +9,8 @@ var b = {
   b: ++a  
 };  
 console.log(a + b.a + ++b.b);  
+
+<details>  
+<summary>Answer</summary>
+18
+</details>
