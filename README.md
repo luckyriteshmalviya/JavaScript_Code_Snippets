@@ -153,3 +153,18 @@ console.log(a);
 0  
 </details>
 
+========================================================================
+
+**10.**   
+
+var number = 10;  
+var display = function(){  
+    console.log(number);  
+    var number = 20;  
+}  
+display()   
+    
+<details>      
+<summary>Answer</summary>   
+undefined   
+</details>  
