@@ -137,3 +137,19 @@ Count is 0
 After the three calls to increase(), count becomes 3.  
 However, the log() function within createCounter captures the message variable at the time of its creation, which happens before any calls to increase(). Therefore, the message   variable inside log() still holds the initial value of Count is 0.  
 </details>
+
+========================================================================
+
+**10.**   
+
+(function (a) {  
+return (function (b){  
+console.log(a);  
+})(1)  
+})(0)   
+  
+<details>    
+<summary>Answer</summary>
+0  
+</details>
+
