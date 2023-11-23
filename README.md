@@ -77,3 +77,36 @@ NaN
 </details>
 
 ========================================================================
+
+**8.**   
+function Operations(input) {
+return {
+sum: (...args) =>arguments[0] + input }
+}
+
+const ops = Operations(0.1) 
+
+console.log(ops.sum(1, 2,3))
+<details>  
+<summary>Answer</summary>
+0.2
+</details>
+
+========================================================================
+
+**8.**   
+function a(){
+    this.setTimeout(()=>console.log('test a'))
+}
+
+const b = ()=>{
+    this.setTimeout(()=>console.log('test b'))
+}
+a()
+b()
+<details>  
+<summary>Answer</summary>
+test a
+test b
+</details>
+
