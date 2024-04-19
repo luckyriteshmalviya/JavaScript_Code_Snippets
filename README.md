@@ -171,45 +171,45 @@ undefined
 
 ========================================================================
 
-**11.**  
-
-const getUser = async () => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve({ id: 1, username: "john_doe" });
-    }, 1000);
-  });
-};
-
-const getPosts = async () => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(["post1", "post2", "post3"]);
-    }, 6500);
-
-    setTimeout(() => {
-      resolve({ message: "API Timeout" });
-    }, 2000);
-  });
-};
-
-const displayUserInfo = async () => {
-  const user = await getUser();
-  const posts = await getPosts();
-  return { user, posts };
-};
-
-displayUserInfo().then((result) => console.log(result));
-
+**11.**    
+  
+const getUser = async () => {  
+  return new Promise((resolve) => {  
+    setTimeout(() => {  
+      resolve({ id: 1, username: "john_doe" });  
+    }, 1000);  
+  });  
+};  
+  
+const getPosts = async () => {  
+  return new Promise((resolve) => {  
+    setTimeout(() => {  
+      resolve(["post1", "post2", "post3"]);  
+    }, 6500);  
+  
+  setTimeout(() => {  
+      resolve({ message: "API Timeout" });  
+    }, 2000);  
+  });  
+};  
+  
+const displayUserInfo = async () => {   
+  const user = await getUser();  
+  const posts = await getPosts();  
+  return { user, posts };  
+};  
+  
+displayUserInfo().then((result) => console.log(result));  
+  
 <details>      
 <summary>Answer</summary>   
-{
-    "user": {
-        "id": 1,
-        "username": "john_doe"
-    },
-    "posts": {
-        "message": "API Timeout"
-    }
-}
+{    
+    "user": {  
+        "id": 1,  
+        "username": "john_doe"  
+    },  
+    "posts": {  
+        "message": "API Timeout"  
+    }  
+}  
 </details>  
