@@ -94,7 +94,7 @@ console.log(ops.sum(1, 2,3))
 
 ========================================================================
 
-**8.**   
+**9.**   
 function a(){  
     this.setTimeout(()=>console.log('test a'))  
 }  
@@ -112,7 +112,7 @@ test b
 
 ========================================================================
 
-**9.**   
+**10.**   
 function createCounter(){    
    let count = 0;  
    function increase(){  
@@ -140,7 +140,7 @@ However, the log() function within createCounter captures the message variable a
 
 ========================================================================
 
-**10.**   
+**11.**   
 
 (function (a) {  
 return (function (b){  
@@ -155,7 +155,7 @@ console.log(a);
 
 ========================================================================
 
-**10.**   
+**12**   
 
 var number = 10;  
 var display = function(){  
@@ -171,7 +171,7 @@ undefined
 
 ========================================================================
 
-**11.**    
+**13.**    
   
 const getUser = async () => {  
   return new Promise((resolve) => {  
