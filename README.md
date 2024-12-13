@@ -213,3 +213,25 @@ displayUserInfo().then((result) => console.log(result));
     }  
 }  
 </details>  
+
+
+========================================================================
+
+**14.** 
+
+var obj1 = {  
+    address : "Mumbai,India",  
+    getAddress: function(){  
+    console.log(this.address);   
+  }  
+}  
+     
+var getAddress = obj1.getAddress;  
+var obj2 = {name:"akshay"};  
+obj2.getAddress();  
+
+<details>      
+<summary>Answer</summary>   
+obj2.getAddress is not a function    
+</details>  
+
