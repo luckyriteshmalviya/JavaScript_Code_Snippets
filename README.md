@@ -235,3 +235,18 @@ obj2.getAddress();
 obj2.getAddress is not a function    
 </details>  
 
+
+
+========================================================================
+
+**15.** 
+
+const arr = [1,2,3]  
+const str = "1,2,3"  
+  
+console.log(arr == str)
+
+<details>      
+<summary>Answer</summary>   
+true  
+</details>  
